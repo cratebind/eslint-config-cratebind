@@ -13,6 +13,7 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",
@@ -23,7 +24,8 @@
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
-    "eslint": "~3.9.1",
+    "eslint": "^5.9.0",
+    "eslint-config-cratebind": "./lib",
     "mocha": "^3.1.2"
   },
   "engines": {
