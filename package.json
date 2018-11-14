@@ -8,6 +8,11 @@
     "eslint-plugin"
   ],
   "author": "Matt W",
+  "homepage": "https://github.com/cratebind/eslint-config-cratebind",
+  "repository": {
+    "url": "https://github.com/cratebind/eslint-config-cratebind",
+    "type": "git"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
@@ -31,5 +36,5 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
