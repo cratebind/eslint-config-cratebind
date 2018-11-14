@@ -12,7 +12,7 @@ $ npm i eslint --save-dev
 $ yarn add eslint
 ```
 
-Next, install `eslint-config-cratebind`:
+2. Install `eslint-config-cratebind`:
 
 ```
 $ npm install eslint-config-cratebind --save-dev
