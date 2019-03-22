@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cratebind",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cratebind ES Lint Config",
   "keywords": [
     "eslint",
@@ -22,6 +22,7 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
