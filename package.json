@@ -31,7 +31,7 @@
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
+    "eslint": "^5.16.0",
     "eslint-config-cratebind": "./lib",
     "mocha": "^3.1.2"
   },
