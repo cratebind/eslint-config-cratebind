@@ -52,6 +52,10 @@ npx eslint 'src/**/*.{js,jsx}' # Replace this path with the path you want to lin
 yarn eslint 'src/**/*.{js,jsx}'
 ```
 
+## Fixes For Common Linting Issues
+
+
+
 ## What's Included
 
 ```json
