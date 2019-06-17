@@ -33,7 +33,7 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-cratebind": "./lib",
-    "mocha": "^3.1.2"
+    "mocha": "^6.1.4"
   },
   "engines": {
     "node": ">=0.10.0"
