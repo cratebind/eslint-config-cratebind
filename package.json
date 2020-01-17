@@ -28,13 +28,13 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "eslint-plugin-unicorn": "^9.1.1",
+    "eslint-plugin-unicorn": "^15.0.1",
     "prettier": "^1.18.2",
     "requireindex": "~1.2.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-cratebind": "./lib",
+    "eslint-config-cratebind": "^3.0.0",
     "mocha": "^6.1.4"
   },
   "engines": {
