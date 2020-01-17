@@ -14,14 +14,9 @@
     "type": "git"
   },
   "main": "index.js",
-  "scripts": {
-    "test": "mocha tests --recursive"
-  },
   "dependencies": {
     "babel-eslint": "^10.0.2",
     "confusing-browser-globals": "^1.0.9",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -29,13 +24,10 @@
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-unicorn": "^15.0.1",
-    "prettier": "^1.18.2",
-    "requireindex": "~1.2.0"
+    "prettier": "^1.18.2"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-cratebind": "^3.0.0",
-    "mocha": "^6.1.4"
+    "eslint": "^5.16.0"
   },
   "engines": {
     "node": ">=0.10.0"
