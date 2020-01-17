@@ -303,7 +303,6 @@ module.exports = {
     'unicorn/custom-error-definition': 'error',
     'unicorn/error-message': 'error',
     'unicorn/escape-case': 'error',
-    'unicorn/explicit-length-check': 'error',
     'unicorn/filename-case': 0,
     'unicorn/import-index': 'error',
     'unicorn/new-for-builtins': 'error',
