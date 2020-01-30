@@ -335,6 +335,9 @@ module.exports = {
     'unicorn/regex-shorthand': 'error',
     'unicorn/throw-new-error': 'error',
 
+    // custom rules
+    'no-warning-comments': [2, { terms: ['@fixme'], location: 'anywhere' }],
+
     // prettier-specific rules
     'prettier/prettier': [
       'error',
