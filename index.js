@@ -244,6 +244,10 @@ module.exports = {
     'import/first': 'error',
     'import/no-amd': 'error',
     'import/no-webpack-loader-syntax': 'error',
+    // make sure to avoid linux vs macos issues with case sensitive files
+    "import/no-unresolved": [2, {
+      "caseSensitive": true
+    }],
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
