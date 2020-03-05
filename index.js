@@ -345,6 +345,7 @@ module.exports = {
 
     // custom rules
     'no-warning-comments': [2, { terms: ['@fixme'], location: 'anywhere' }],
+    'no-console': 'error',
 
     // prettier-specific rules
     'prettier/prettier': [
