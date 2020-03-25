@@ -250,6 +250,7 @@ module.exports = {
     "import/no-unresolved": [2, {
       "caseSensitive": true
     }],
+    "import/no-unused-modules": [2, { "unusedExports": true }],
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
