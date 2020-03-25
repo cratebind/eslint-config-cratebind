@@ -280,6 +280,7 @@ module.exports = {
     'react/style-prop-object': 'warn',
     // require display names to improve debugging experience for other developers
     'react/display-name': 'error',
+    "react/self-closing-comp": 2,
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
     'jsx-a11y/accessible-emoji': 'warn',
