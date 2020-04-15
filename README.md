@@ -24,7 +24,7 @@ $ yarn add eslint-config-cratebind
 
 ## Usage
 
-Extend `cratebind` in your `.eslintrc` configuration file. You can omit the `eslint-config-` prefix:
+Create or update the `.eslintrc` file in the root of your directory and extend `cratebind`. You can omit the `eslint-config-` prefix:
 
 ```json
 {
@@ -34,7 +34,7 @@ Extend `cratebind` in your `.eslintrc` configuration file. You can omit the `esl
 
 Then overwrite rules as needed:
 
-```json
+```js
 {
     "extends": ["cratebind"],
     "rules": {
@@ -44,11 +44,43 @@ Then overwrite rules as needed:
 }
 ```
 
-To lint your project, just run:
+## NPM Script
 
-```bash
-# NPX runs the eslint in your ./node_modules/.bin
-npx eslint 'src/**/*.{js,jsx}' # Replace this path with the path you want to lint
+It's recommended to add a `lint` script to your NPM scripts:
 
-yarn eslint 'src/**/*.{js,jsx}'
+```js
+{
+    "scripts": {
+        // --cache flag improves performance, --fix will autofix fixable issues
+        "lint": "eslint --cache \"**/*.js\" --fix"
+    }
+}
 ```
+
+## Git Hooks
+
+It's also highly recommended to use [Husky](https://github.com/typicode/husky) and [Lint Staged](https://github.com/okonet/lint-staged) to lint your code before committing:
+
+1. Install Husky and Lint Staged
+```bash
+yarn add -D husky lint-staged
+```
+
+2. Add these to your `package.json`
+```json
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|ts|tsx)": [
+      "eslint --cache --fix --quiet",
+      "git add"
+    ]
+  }
+}
+```
+
+This combination is
