@@ -289,7 +289,10 @@ module.exports = {
 
     'react/no-children-prop': 'error',
     'react/jsx-no-useless-fragment': 'error',
-    // 'react/function-component-definition': 'error',
+    'react/function-component-definition': ['error', {
+      namedComponents: 'arrow-function',
+      unnamedComponents: 'arrow-function',
+    }],
 
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
