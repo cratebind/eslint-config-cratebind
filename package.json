@@ -7,6 +7,9 @@
     "eslintplugin",
     "eslint-plugin"
   ],
+  "scripts": {
+    "lint": "eslint --cache \"**/*.js\" --fix"
+  },
   "author": "Matt W",
   "homepage": "https://github.com/cratebind/eslint-config-cratebind",
   "repository": {
