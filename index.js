@@ -241,6 +241,8 @@ module.exports = {
       },
     ],
     'getter-return': 'warn',
+    "prefer-const": "error",
+    "no-var": "error",
 
     // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
     'import/first': 'error',
@@ -255,11 +257,11 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
     'react/jsx-no-comment-textnodes': 'warn',
-    'react/jsx-no-duplicate-props': 'warn',
-    'react/jsx-no-target-blank': 'warn',
+    'react/jsx-no-duplicate-props': 'error',
+    'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-pascal-case': [
-      'warn',
+      'error',
       {
         allowAllCaps: true,
         ignore: [],
@@ -272,20 +274,29 @@ module.exports = {
     // See https://github.com/facebook/create-react-app/issues/5204 for
     // blockers until its re-enabled
     // 'react/no-deprecated': 'warn',
-    'react/no-direct-mutation-state': 'warn',
+    'react/no-direct-mutation-state': 'error',
     'react/no-is-mounted': 'warn',
     'react/no-typos': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/require-render-return': 'error',
-    'react/style-prop-object': 'warn',
+    'react/style-prop-object': 'error',
     // require display names to improve debugging experience for other developers
     'react/display-name': 'error',
-    "react/self-closing-comp": 2,
+    "react/self-closing-comp": 'error',
+
+    // enforce consistent event handler names
+    "react/jsx-handler-names": 'warn',
+
+    'react/no-children-prop': 'error',
+    'react/jsx-no-useless-fragment': 'error',
+    // 'react/function-component-definition': 'error',
+
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
     'jsx-a11y/accessible-emoji': 'warn',
     'jsx-a11y/alt-text': 'warn',
     'jsx-a11y/anchor-has-content': 'warn',
+
     'jsx-a11y/anchor-is-valid': [
       'warn',
       {
