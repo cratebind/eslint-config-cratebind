@@ -30,7 +30,7 @@ module.exports = {
     jest: true,
     jquery: true,
     node: true,
-    'cypress/globals': true
+    'cypress/globals': true,
   },
   globals: {
     cy: 'writable',
@@ -241,18 +241,22 @@ module.exports = {
       },
     ],
     'getter-return': 'warn',
-    "prefer-const": "error",
-    "no-var": "error",
+    'prefer-const': 'error',
+    'no-var': 'error',
 
     // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
     'import/first': 'error',
     'import/no-amd': 'error',
     'import/no-webpack-loader-syntax': 'error',
     // make sure to avoid linux vs macos issues with case sensitive files
-    "import/no-unresolved": [2, {
-      "caseSensitive": true
-    }],
-    "import/no-unused-modules": [2, { "unusedExports": true }],
+    'import/no-unresolved': [
+      2,
+      {
+        caseSensitive: true,
+      },
+    ],
+
+    'import/no-unused-modules': [2, { unusedExports: true }],
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
@@ -282,18 +286,20 @@ module.exports = {
     'react/style-prop-object': 'error',
     // require display names to improve debugging experience for other developers
     'react/display-name': 'error',
-    "react/self-closing-comp": 'error',
+    'react/self-closing-comp': 'error',
 
     // enforce consistent event handler names
-    "react/jsx-handler-names": 'warn',
+    'react/jsx-handler-names': 'warn',
 
     'react/no-children-prop': 'error',
     'react/jsx-no-useless-fragment': 'error',
-    'react/function-component-definition': ['error', {
-      namedComponents: 'arrow-function',
-      unnamedComponents: 'arrow-function',
-    }],
-
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
     'jsx-a11y/accessible-emoji': 'warn',
