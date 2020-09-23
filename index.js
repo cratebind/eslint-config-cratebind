@@ -3,7 +3,7 @@ const restrictedGlobals = require('confusing-browser-globals');
 module.exports = {
   root: true,
   extends: ['prettier', 'prettier/react', 'plugin:cypress/recommended'],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
