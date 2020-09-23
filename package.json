@@ -18,7 +18,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "babel-eslint": "^10.0.2",
+    "babel-eslint": "^10.1.0",
     "confusing-browser-globals": "^1.0.9",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-cypress": "^2.10.1",
@@ -31,11 +31,14 @@
     "prettier": "^2.1.2"
   },
   "devDependencies": {
-    "eslint": "^7.9.0",
-    "react": "^16.13.1"
+    "eslint": "^7.9.0"
   },
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0"
+  }
 }
