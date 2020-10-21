@@ -271,7 +271,7 @@ module.exports = {
         ignore: [],
       },
     ],
-    'react/jsx-uses-react': 'warn',
+    'react/jsx-uses-react': 0,
     'react/jsx-uses-vars': 'warn',
     'react/no-danger-with-children': 'warn',
     // Disabled because of undesirable warnings
@@ -281,7 +281,7 @@ module.exports = {
     'react/no-direct-mutation-state': 'error',
     'react/no-is-mounted': 'warn',
     'react/no-typos': 'error',
-    'react/react-in-jsx-scope': 'error',
+    'react/react-in-jsx-scope': 0,
     'react/require-render-return': 'error',
     'react/style-prop-object': 'error',
     // require display names to improve debugging experience for other developers
