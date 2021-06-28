@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cratebind",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "Cratebind ES Lint Config",
   "keywords": [
     "eslint",
