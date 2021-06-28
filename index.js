@@ -256,12 +256,12 @@ module.exports = {
       },
     ],
 
-    'import/no-unused-modules': [2,
-      {
-        unusedExports: true,
-        // ignore when next.js pages are not used elsewhere
-        ignoreExports: ['pages/**'],
-      }],
+    // 'import/no-unused-modules': [2,
+    //   {
+    //     unusedExports: true,
+    //     // ignore when next.js pages are not used elsewhere
+    //     ignoreExports: ['pages/**'],
+    //   }],
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
